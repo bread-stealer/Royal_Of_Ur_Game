@@ -40,7 +40,7 @@ class GameBoard
         Console.WriteLine("---|---|---|---|---|---|---");
         Console.WriteLine(" {0} | {1} | {2} | {3} | {4} | {5} | {6} | {7} ", board[1, 0], board[1, 1], board[1, 2], board[1, 3], board[1, 4], board[1, 5], board[1, 6], board[2, 0]);
         Console.WriteLine("---|---|---|---|---|---|---");
-        Console.WriteLine(" {0} | {1} | {2} | {3} |   | {4} | {5} | {6} ", board[2, 1], board[2, 2], board[2, 3], board[2, 4], board[2, 5], board[2, 6], board[1, 7]);
+        Console.WriteLine(" {0} | {1} | {2} | {3} |   | {4} | {5} | {6} ", board[2, 1], board[2, 2], board[2, 3], board[2, 4], board[2, 5], board[2, 6], board[0, 6]);
     }
 
     /// <summary>
