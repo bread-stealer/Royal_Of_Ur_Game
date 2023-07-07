@@ -2,9 +2,9 @@
 
 ### **Autoria:** 
 
-| Nome | Número |
+| **Nome** | **Número** |
 | - | - |
-| Guilherme | Negrinho |
+| Guilherme Negrinho | 22207383 |
 
 **Repositório Git:** [GitHub](https://github.com/bread-stealer/Royal_Of_Ur_Game)
 
