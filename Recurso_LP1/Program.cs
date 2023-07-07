@@ -1,30 +1,33 @@
 ﻿using System;
 
-namespace Recurso_LP1
+/// <summary>
+/// Represents the entry point of the program.
+/// </summary>
+class Program
 {
     /// <summary>
-    /// Represents the entry point of the program.
+    /// The main method of the program.
     /// </summary>
-    class Program
+    /// <param name="args">Command-line arguments.</param>
+    static void Main(string[] args)
     {
-        /// <summary>
-        /// The main method of the program.
-        /// </summary>
-        /// <param name="args">Command-line arguments.</param>
-        static void Main(string[] args)
-        {
-            GameBoard gameBoard = new GameBoard();
-            gameBoard.DisplayBoard();
+        GameBoard gameBoard = new GameBoard();
+        gameBoard.DisplayBoard();
 
-            // Modify the board as needed
-            gameBoard.SetCellValue(0, 0, 'X');
-            gameBoard.SetCellValue(1, 3, 'O');
-            gameBoard.SetCellValue(2, 6, 'X');
+        // Create players
+        Player player1 = new Player("Player 1", 'X');
+        Player player2 = new Player("Player 2", 'O');
 
-            gameBoard.DisplayBoard();
+        gameBoard.SetCellValue(0, 0, player1.Symbol);
+        gameBoard.SetCellValue(1, 3, player2.Symbol);
+        gameBoard.SetCellValue(2, 6, player1.Symbol);
 
-            Console.ReadLine();
-        }
+        gameBoard.DisplayBoard();
+
+        // Players make their moves
+        player1.MakeMove();
+        player2.MakeMove();
+
+        Console.ReadLine();
     }
-
 }
