@@ -32,6 +32,5 @@ class Player
     public void MakeMove()
     {
         Console.WriteLine("{0}, it's your turn. Make your move!", Name);
-        // Add your logic to handle player moves here
     }
 }
