@@ -26,9 +26,6 @@ class Program
             }
             Console.WriteLine();
         }
-
-        // Wait for user input before closing the console window
-        Console.ReadLine();
     }
 }
 
