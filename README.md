@@ -33,7 +33,8 @@
 ---
 
 ### **Fluxograma:**
-![Fluxograma]("Fluxgram.png")
+![Fluxgram](https://github.com/bread-stealer/Royal_Of_Ur_Game/assets/138810769/7860678b-2381-4869-b814-838e8ca17796)
+
 
 ### **Referências:**
  - [C# API](https://learn.microsoft.com/en-us/dotnet/api/?view=netstandard-2.0)
