@@ -38,4 +38,7 @@
 
 ### **Referências:**
  - [C# API](https://learn.microsoft.com/en-us/dotnet/api/?view=netstandard-2.0)
- - [Stack Overflow](https://stackoverflow.com/)
+     - Usado para relembrar as bases, recebendo informações sobre classes, métodos, propriedades e outros tipos de membros disponíveis nas bibliotecas do .NET.
+ - [CHATPT](https://chat.openai.com/)
+     - Usado para sugestões de organização de código;
+     - Usado para explicação e sugestão de resolução de Warnings.
