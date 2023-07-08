@@ -4,13 +4,14 @@ class GameBoard
     private static char[,] board =
     {
         { '+','-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '+', ' ', ' ', ' ', ' ', '+', '-', '-', '-','-','-', '+',},
-        { '|',' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'S', ' ', ' ', ' ', ' ', 'E', ' ', ' ', ' ',' ',' ', '|',},
+        { '|',' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',' ',' ', '|',},
         { '+',' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '+', '-', '-', '-', '-', '+', ' ', ' ', ' ',' ',' ', '+',},
         { '|',' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',' ',' ', '|',},
         { '+',' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '+', '-', '-', '-', '-', '+', ' ', ' ', ' ',' ',' ', '+',},
         { '|',' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '|', ' ', ' ', ' ', ' ', '|', ' ', ' ', ' ',' ',' ', '|',},
         { '+','-', '-', '-', '+', '-', '-', '-', '-', '-', '-', '+', ' ', ' ', ' ', ' ', '+', '-', '-', '-','-','-', '+',}
     };
+        public const int MaxPosition = 8;
 
     public static void DisplayBoard(Player player1 = null, Player player2 = null)
     {
@@ -41,11 +42,19 @@ class GameBoard
     private static void UpdatePlayerSymbol(char[,] board, Player player, char symbol)
     {
         int position = player.Position;
-        int row = GetRow(position);
-        int col = GetColumn(position);
 
-        if (IsValidPosition(row, col))
-            board[row, col] = symbol;
+        if (position == 1)
+            board[1, 11] = symbol; // Update the 'S' position on the board
+        else if (position == MaxPosition) // Check if player reached the end
+            board[1, 17] = symbol; // Update the 'E' position on the board
+        else
+        {
+            int row = GetRow(position);
+            int col = GetColumn(position);
+
+            if (IsValidPosition(row, col))
+                board[row, col] = symbol;
+        }
     }
 
     private static int GetRow(int position)
