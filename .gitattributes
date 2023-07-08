@@ -1,1 +1,2 @@
 *.png filter=lfs diff=lfs merge=lfs -text
+C:/Users/Gui/Desktop/LP1/Recurso_L1/LP_1.png filter=lfs diff=lfs merge=lfs -text
