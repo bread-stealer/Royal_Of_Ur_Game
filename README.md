@@ -33,7 +33,7 @@
 ---
 
 ### **Fluxograma:**
-![Fluxograma]("C:\Users\Gui\Desktop\LP1\Recurso_L1\LP_1.png")
+![Fluxograma]("https://drive.google.com/file/d/1HqwbWIg4Egp4D41SQsgRL_9lOphJ-qnl/view?usp=drive_link")
 
 ### **Referências:**
  - [C# API](https://learn.microsoft.com/en-us/dotnet/api/?view=netstandard-2.0)
